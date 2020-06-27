@@ -1,0 +1,29 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/sdo/OGMS_imports.owl
+
+[Source ontology]
+OGMS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGMS_0000031 #disease
+http://purl.obolibrary.org/obo/BFO_0000023 #role
+http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/IAO_0000027 #data item
+http://purl.obolibrary.org/obo/OGMS_0000014 #clinical finding
+includeAllChildren
+http://purl.obolibrary.org/obo/OGMS_0000063 
+http://purl.obolibrary.org/obo/OGMS_0000059
+http://purl.obolibrary.org/obo/OGMS_0000103
+http://purl.obolibrary.org/obo/BFO_0000034 #function
+http://purl.obolibrary.org/obo/BFO_0000019 #quality
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

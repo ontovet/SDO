@@ -1,0 +1,104 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/sdo/NCBITaxon_import.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_10497
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_28344
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_85708
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_10275
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_1159905
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_10345
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_1960251
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_1960249
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_1960250 
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_237020
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_687333
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_10796
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_10276 
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_1239567
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_646294
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_28295
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_11146
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_11072
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_12110 
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_586425
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_12075
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_118140
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_42005
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_114326
+http://purl.obolibrary.org/obo/NCBITaxon_46221
+http://purl.obolibrary.org/obo/NCBITaxon_ 1868221
+http://purl.obolibrary.org/obo/NCBITaxon_70062
+http://purl.obolibrary.org/obo/NCBITaxon_1608255
+http://purl.obolibrary.org/obo/NCBITaxon_1985364 
+http://purl.obolibrary.org/obo/NCBITaxon_68887
+http://purl.obolibrary.org/obo/NCBITaxon_11572
+http://purl.obolibrary.org/obo/NCBITaxon_339165
+http://purl.obolibrary.org/obo/NCBITaxon_1766554
+http://purl.obolibrary.org/obo/NCBITaxon_11266
+http://purl.obolibrary.org/obo/NCBITaxon_11096
+http://purl.obolibrary.org/obo/NCBITaxon_63421
+http://purl.obolibrary.org/obo/NCBITaxon_1156769
+http://purl.obolibrary.org/obo/NCBITaxon_53179
+http://purl.obolibrary.org/obo/NCBITaxon_251774
+http://purl.obolibrary.org/obo/NCBITaxon_10880 
+http://purl.obolibrary.org/obo/NCBITaxon_369960
+http://purl.obolibrary.org/obo/NCBITaxon_445792
+http://purl.obolibrary.org/obo/NCBITaxon_445791
+http://purl.obolibrary.org/obo/NCBITaxon_12845
+http://purl.obolibrary.org/obo/NCBITaxon_9825 # Sus scrofa domesticus
+http://purl.obolibrary.org/obo/NCBITaxon_9823 # Sus scrofa 
+http://purl.obolibrary.org/obo/NCBITaxon_9606 # Homo sapiens
+http://purl.obolibrary.org/obo/NCBITaxon_9796 # Equus caballus
+http://purl.obolibrary.org/obo/NCBITaxon_9515 # Canis lupus familiaris
+http://purl.obolibrary.org/obo/NCBITaxon_9160 # Passer montanus
+http://purl.obolibrary.org/obo/NCBITaxon_10090 # Mus musculus
+http://purl.obolibrary.org/obo/NCBITaxon_9913 # Bos taurus
+http://purl.obolibrary.org/obo/NCBITaxon_9654 # Procyon lotor
+http://purl.obolibrary.org/obo/NCBITaxon_9940 # Ovis aries
+http://purl.obolibrary.org/obo/NCBITaxon_9925 # Capra hircus
+http://purl.obolibrary.org/obo/NCBITaxon_9970 # Syncerus caffer
+http://purl.obolibrary.org/obo/NCBITaxon_9685 # Felis catus
+http://purl.obolibrary.org/obo/NCBITaxon_9030 # Gallus
+http://purl.obolibrary.org/obo/NCBITaxon_6937 # Ornithodoros=relapsing fever ticks
+http://purl.obolibrary.org/obo/NCBITaxon_7157 # Culicidae=mosquitos
+http://purl.obolibrary.org/obo/NCBITaxon_7370 # Musca domestica=house fly
+http://purl.obolibrary.org/obo/NCBITaxon_149531 # Aedes
+http://purl.obolibrary.org/obo/NCBITaxon_7174 # Culex
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_10239 #Viruses
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

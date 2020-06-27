@@ -1,0 +1,3444 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY NCBITaxon "http://purl.obolibrary.org/obo/NCBITaxon#" >
+    <!ENTITY ncbitaxon "http://purl.obolibrary.org/obo/ncbitaxon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;sdo/NCBITaxon_import.owl#"
+     xml:base="&obo;sdo/NCBITaxon_import.owl"
+     xmlns:ncbitaxon="&obo;ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:NCBITaxon="&obo;NCBITaxon#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="&obo;sdo/NCBITaxon_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+    <owl:AnnotationProperty rdf:about="&obo;ncbitaxon#has_rank">
+        <rdfs:label rdf:datatype="&xsd;string">has_rank</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A metadata relation between a class and its taxonomic rank (eg species, family)</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This is an abstract class for use with the NCBI taxonomy to name the depth of the node within the tree. The link between the node term and the rank is only visible if you are using an obo 1.3 aware browser/editor; otherwise this can be ignored</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1006205 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1006205">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 strain Bartha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Bartha)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_101947 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_101947">
+        <rdfs:label rdf:datatype="&xsd;string">Pseudorabies virus Ea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus strain Ea</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Ea)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10239">
+        <rdfs:label rdf:datatype="&xsd;string">Viruses</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Vira</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Viridae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">viruses</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10240 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10240">
+        <rdfs:label rdf:datatype="&xsd;string">Poxviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35237"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10241 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10241">
+        <rdfs:label rdf:datatype="&xsd;string">Chordopoxvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10240"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10275 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10275">
+        <rdfs:label rdf:datatype="&xsd;string">Suipoxvirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10241"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10276 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10276">
+        <rdfs:label rdf:datatype="&xsd;string">Swinepox virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10275"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10277 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10277">
+        <rdfs:label rdf:datatype="&xsd;string">Swinepox virus (STRAIN KASZA)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10276"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">SPV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1028730 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1028730">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/NC-QW266/USA/2003</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1028731 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1028731">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/NC-WGP117/USA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1028732 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1028732">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/NC-WGP128/USA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1028733 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1028733">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/NC-WGP6A/USA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10292 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10292">
+        <rdfs:label rdf:datatype="&xsd;string">Herpesviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_548681"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10293 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10293">
+        <rdfs:label rdf:datatype="&xsd;string">Alphaherpesvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10292"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10319 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10319">
+        <rdfs:label rdf:datatype="&xsd;string">Varicellovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10293"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10345 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10345">
+        <rdfs:label rdf:datatype="&xsd;string">Suid alphaherpesvirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10319"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Alphaherpesvirus pseudorabies virus PRV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Aujeszky&apos;s disease virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:44156</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PRV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies Virus PRV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus type 1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10346 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10346">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Becker)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (STRAIN BECKER)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10349 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10349">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain NIA-3)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (STRAIN NIA-3)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10350 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10350">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Rice)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (STRAIN RICE)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10357 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10357">
+        <rdfs:label rdf:datatype="&xsd;string">Betaherpesvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10292"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10374 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10374">
+        <rdfs:label rdf:datatype="&xsd;string">Gammaherpesvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10292"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lymphoproliferative virus group</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10497 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10497">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus</rdfs:label>
+        <rdfs:label xml:lang="zh">非洲猪瘟病毒</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39743"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">ASFV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus ASF</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus ASFV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus, ASFV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10498 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10498">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus BA71V</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (strain BA71V)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10499 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10499">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus LIS57</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (isolate Lisbon 57 / Lis57)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (strain LIS57)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10500 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10500">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Malawi LIL 20/1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (isolate Malawi LIL 20/1)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Malawi Lil-20/1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10508 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10508">
+        <rdfs:label rdf:datatype="&xsd;string">Adenoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35237"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10509 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10509">
+        <rdfs:label rdf:datatype="&xsd;string">Mastadenovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10508"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10780 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10780">
+        <rdfs:label rdf:datatype="&xsd;string">Parvoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_29258"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10796 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10796">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine parvovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1511910"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PPV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine parvovirus PPV</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10797 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10797">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine parvovirus NADL-2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10796"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine parvovirus (STRAIN NADL-2)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1090972 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1090972">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain Jiangsu/2010</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11049 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11049">
+        <rdfs:label rdf:datatype="&xsd;string">Lelystad virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">PRRSV strain Lelystad</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11050 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11050">
+        <rdfs:label rdf:datatype="&xsd;string">Flaviviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Flavivirus (arbovirus group B)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11051 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11051">
+        <rdfs:label rdf:datatype="&xsd;string">Flavivirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11050"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">arboviruses group B</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11072 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11072">
+        <rdfs:label rdf:datatype="&xsd;string">Japanese encephalitis virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11051"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis (JE) virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus JE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus JEV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11073 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11073">
+        <rdfs:label rdf:datatype="&xsd;string">Japanese encephalitis virus strain SA-14</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11072"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus (STRAIN SA-14)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11074 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11074">
+        <rdfs:label rdf:datatype="&xsd;string">Japanese encephalitis virus strain SA(V)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11072"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus (STRAIN SA(V))</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11075 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11075">
+        <rdfs:label rdf:datatype="&xsd;string">Japanese encephalitis virus strain JAOARS982</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11072"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus (STRAIN JAOARS982)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11076 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11076">
+        <rdfs:label rdf:datatype="&xsd;string">Japanese encephalitis virus strain Nakayama</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11072"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Japanese encephalitis virus (STRAIN NAKAYAMA)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11095 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11095">
+        <rdfs:label rdf:datatype="&xsd;string">Pestivirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11050"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:12832207</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:7747470</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11096 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11096">
+        <rdfs:label rdf:datatype="&xsd;string">Classical swine fever virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2170082"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Hog cholera virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:12625</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:54314</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:7747470</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pestivirus type 2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">classical swine fever virus CSFV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">hog cholera virus HCV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">swine fever virus</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11118 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11118">
+        <rdfs:label rdf:datatype="&xsd;string">Coronaviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_76804"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11146 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11146">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine respiratory coronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11149"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine respiratory coronavirus PRCV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine respiratory virus</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11148 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11148">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine respiratory coronavirus (STRAIN RM4)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11146"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11149 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11149">
+        <rdfs:label rdf:datatype="&xsd;string">Transmissible gastroenteritis virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693997"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:12859</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine transmissable gastroenteritis coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine transmissible gastroenteritis coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">TGEV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine transmissible gastroenteritis virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">transmissible gastroenteritis coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">transmissible gastroenteritis virus TGEV</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11155 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11155">
+        <rdfs:label rdf:datatype="&xsd;string">Torovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_694017"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11157 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11157">
+        <rdfs:label rdf:datatype="&xsd;string">Mononegavirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35301"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">negative-sense genome single-stranded RNA viruses</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11158 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11158">
+        <rdfs:label rdf:datatype="&xsd;string">Paramyxoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11157"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11266 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11266">
+        <rdfs:label rdf:datatype="&xsd;string">Filoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11157"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Filovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:11267</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11270 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11270">
+        <rdfs:label rdf:datatype="&xsd;string">Rhabdoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11157"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:16186241</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11286 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11286">
+        <rdfs:label rdf:datatype="&xsd;string">Lyssavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11270"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11292 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11292">
+        <rdfs:label rdf:datatype="&xsd;string">Rabies lyssavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11286"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Rabies virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11308 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11308">
+        <rdfs:label rdf:datatype="&xsd;string">Orthomyxoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35301"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_114326 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_114326">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine adenovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_346173"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1156769 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1156769">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine kobuvirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1298633"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:796911</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pig Kobuvirus isolates</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11572 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11572">
+        <rdfs:label rdf:datatype="&xsd;string">Orthobunyavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1980416"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bunyavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bunyaviruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1159901 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1159901">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693995"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1159905 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1159905">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine coronavirus HKU15</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1965089"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11632 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11632">
+        <rdfs:label rdf:datatype="&xsd;string">Retroviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2169561"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_118139 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_118139">
+        <rdfs:label rdf:datatype="&xsd;string">Teschovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12058"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_118140 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_118140">
+        <rdfs:label rdf:datatype="&xsd;string">Teschovirus A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118139"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine teschovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11974 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11974">
+        <rdfs:label rdf:datatype="&xsd;string">Caliciviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12058 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12058">
+        <rdfs:label rdf:datatype="&xsd;string">Picornaviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_464095"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Picormavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Picornavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12059 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12059">
+        <rdfs:label rdf:datatype="&xsd;string">Enterovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12058"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Enteroviruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:12128</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12075 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12075">
+        <rdfs:label rdf:datatype="&xsd;string">Swine vesicular disease virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_138949"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12076 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12076">
+        <rdfs:label rdf:datatype="&xsd;string">Swine vesicular disease virus (STRAIN H/3 &apos;76)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12075"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12077 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12077">
+        <rdfs:label rdf:datatype="&xsd;string">Swine vesicular disease virus (STRAIN UKG/27/72)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12075"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1239567 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1239567">
+        <rdfs:label rdf:datatype="&xsd;string">Mamastrovirus 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_249588"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:70795</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine astrovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12461 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12461">
+        <rdfs:label rdf:datatype="&xsd;string">Hepatitis E virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1678143"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">HEV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Hepatitis E virus HEV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12845 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12845">
+        <rdfs:label rdf:datatype="&xsd;string">Swine influenza virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35324"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1298633 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1298633">
+        <rdfs:label rdf:datatype="&xsd;string">Aichivirus C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_194960"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_137992 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_137992">
+        <rdfs:label rdf:datatype="&xsd;string">Asfarviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35237"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138679 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138679">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138687</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138680 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138680">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138690</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J7</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138681 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138681">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 4</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138682 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138682">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138688</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 5</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138683 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138683">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138689</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138691</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 6</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J5</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J9</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138684 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138684">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 7</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 7</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138949 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_138949">
+        <rdfs:label rdf:datatype="&xsd;string">Enterovirus B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12059"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Enterovirus EV-B</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Human enterovirus B</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1465644 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1465644">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus PDCoV/USA/Illinois121/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Deltacoronavirus swine/USA/Illinois121/2014</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1476502 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1476502">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine deltacoronavirus 8734/USA-IA/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1477411 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1477411">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus PDCoV/USA/Illinois133/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Deltacoronavirus SDCV/USA/Illinois133/2014</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1477412 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1477412">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus PDCoV/USA/Illinois134/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Deltacoronavirus SDCV/USA/Illinois134/2014</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1477413 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1477413">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus PDCoV/USA/Illinois136/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Deltacoronavirus SDCV/USA/Illinois136/2014</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1477414 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1477414">
+        <rdfs:label rdf:datatype="&xsd;string">Deltacoronavirus PDCoV/USA/Ohio137/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Deltacoronavirus SDCV/USA/Ohio137/2014</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1506574 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1506574">
+        <rdfs:label rdf:datatype="&xsd;string">Protoparvovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_40119"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:10781</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Parvovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Parvoviruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1511910 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1511910">
+        <rdfs:label rdf:datatype="&xsd;string">Ungulate protoparvovirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1506574"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1525377 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1525377">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus L00721/GER/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28295"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus (strain GER/L00721/2014)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1525854 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1525854">
+        <rdfs:label rdf:datatype="&xsd;string">Swine deltacoronavirus OhioCVM1/2014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">SdCV/USA/OhioCVM1/2014</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_153135 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_153135">
+        <rdfs:label rdf:datatype="&xsd;string">Gammaretrovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_327045"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">MLV-related viruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Mammalian type C retrovirus group</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Mammalian type C retroviruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:11762</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mammalian type C oncoviruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">type C oncoviruses</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1559519 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1559519">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine deltacoronavirus KNU14-04</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1586324 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1586324">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine deltacoronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1608255 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1608255">
+        <rdfs:label rdf:datatype="&xsd;string">Suid betaherpesvirus 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_686603"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:109993</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine cytomegalovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_167786 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_167786">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain TNL)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1678141 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1678141">
+        <rdfs:label rdf:datatype="&xsd;string">Orthohepevirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_291484"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1678143 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1678143">
+        <rdfs:label rdf:datatype="&xsd;string">Orthohepevirus A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1678141"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1766554 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1766554">
+        <rdfs:label rdf:datatype="&xsd;string">Swine enteric coronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693997"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_179239 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_179239">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Caliciviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11974"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_194960 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_194960">
+        <rdfs:label rdf:datatype="&xsd;string">Kobuvirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12058"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1960249 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1960249">
+        <rdfs:label rdf:datatype="&xsd;string">Suid gammaherpesvirus 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_548687"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1960251 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1960251">
+        <rdfs:label rdf:datatype="&xsd;string">Suid gammaherpesvirus 5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_548687"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1965089 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1965089">
+        <rdfs:label rdf:datatype="&xsd;string">Coronavirus HKU15</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159901"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1980410 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1980410">
+        <rdfs:label rdf:datatype="&xsd;string">Bunyavirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35301"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1980416 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1980416">
+        <rdfs:label rdf:datatype="&xsd;string">Peribunyaviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1980410"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bunyaviridae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:11571</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_199308 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_199308">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine lymphotropic herpesvirus 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1960251"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PLHV3</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065044 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065044">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065045 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065045">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065046 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065046">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065047 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065047">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065048 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065048">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 7</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065049 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065049">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 8</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065050 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065050">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 9</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065051 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065051">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 10</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065052 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065052">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 11</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065053 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065053">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 12</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065054 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065054">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 13</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065055 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065055">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 14</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2065056 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2065056">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 15</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2078986 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2078986">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine deltacoronavirus Sichuan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1159905"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2116623 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2116623">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus P4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:29521027</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2169561 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2169561">
+        <rdfs:label rdf:datatype="&xsd;string">Ortervirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2170082 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2170082">
+        <rdfs:label rdf:datatype="&xsd;string">Pestivirus C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11095"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_229032 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_229032">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus CV777</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28295"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus (strain CV777)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_229033 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_229033">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus Br1/87</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28295"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus (strain Br1/87)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_230236 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_230236">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine hemagglutinating encephalomyelitis virus (strain IAF-404)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_42005"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_230237 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_230237">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine hemagglutinating encephalomyelitis virus (strain 67N)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_42005"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_237020 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_237020">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine torovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11155"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_249588 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_249588">
+        <rdfs:label rdf:datatype="&xsd;string">Mamastrovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39733"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251774 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251774">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine parainfluenza virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_351517"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:12359434</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:9856104</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine parainfluenza virus (SER)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_255364 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_255364">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV HN1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus HN1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28295 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28295">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine epidemic diarrhea virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693996"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PEDV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine epidemic diarrhoea virus</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28344 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28344">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_325675"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:12796</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:70172</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PRRSV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus (PRRSV)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine respiratory and reproductive syndrome virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine reproductive and respiratory syndrome virus PRRSV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine reproductive and respiratory syndrome virus, PRRSV</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_288959 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_288959">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV LV4.2.1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11049"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus LV4.2.1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_291484 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_291484">
+        <rdfs:label rdf:datatype="&xsd;string">Hepeviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29258 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_29258">
+        <rdfs:label rdf:datatype="&xsd;string">ssDNA viruses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ssDNA nonenveloped viruses</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_300559 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_300559">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV VR2332</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">PRRSV VR-2332</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">SIRS virus ATCC VR-2332</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_300561 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_300561">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV 16244B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus 16244B</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_300562 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_300562">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV HB-2(sh)/2002</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus HB-2(sh)/2002</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_300563 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_300563">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV HB-1(sh)/2002</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus HB-1(sh)/2002</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_300880 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_300880">
+        <rdfs:label rdf:datatype="&xsd;string">Swinepox virus (strain 17077-99)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10276"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_31522 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_31522">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Indiana S)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (strain Indiana S)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_31523 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_31523">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Indiana-Funkhauser / Becker)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (strain Indiana-Funkhauser / Becker)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_325675 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_325675">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Arteriviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_76803"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_327045 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_327045">
+        <rdfs:label rdf:datatype="&xsd;string">Orthoretrovirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11632"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33703 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33703">
+        <rdfs:label rdf:datatype="&xsd;string">Suid herpesvirus 1 strain Kaplan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10345"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:10348</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (STRAIN KA)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Pseudorabies virus (strain Kaplan)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain KA)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Suid herpesvirus 1 (strain Kaplan)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33713 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33713">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus E-75</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (strain E-75)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33725 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33725">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine parvovirus 90HS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10796"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine parvovirus (strain 90HS)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33736 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33736">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine respiratory coronavirus (strain 86/137004 / British isolate)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11146"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:11147</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine respiratory coronavirus (STRAIN PRCV 86/137004 / BRITISH ISOLATE)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_339165 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_339165">
+        <rdfs:label rdf:datatype="&xsd;string">Swine enteric calicivirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_179239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NOT Porcine enteric sapovirus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_345249 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_345249">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Circovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39725"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_346173 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_346173">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Mastadenovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10509"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_348291 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_348291">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain SD3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_348292 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_348292">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain SD5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_348293 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_348293">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain SD6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_351517 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_351517">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Rubulavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39744"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35237 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35237">
+        <rdfs:label rdf:datatype="&xsd;string">dsDNA viruses, no RNA stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">dsDNA viruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35248 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35248">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Betaherpesvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10357"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35278 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35278">
+        <rdfs:label rdf:datatype="&xsd;string">ssRNA positive-strand viruses, no DNA stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_439488"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35301 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35301">
+        <rdfs:label rdf:datatype="&xsd;string">ssRNA negative-strand viruses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_439488"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35324 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35324">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Orthomyxoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11308"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_360395 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_360395">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine torovirus (strain P10)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_237020"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_363168 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_363168">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 8</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138685</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus 11</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_363169 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_363169">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 9</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_363170 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_363170">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 10</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_363171 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_363171">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 11</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_363628 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_363628">
+        <rdfs:label rdf:datatype="&xsd;string">unclassified Anelloviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687329"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">unclassified Anellovirus</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_369960 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_369960">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine type-C oncovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_153135"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39014 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39014">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus strain E-70/MS44</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_443877"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (strain E-70 / isolate MS44)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus strain E-70 / isolate MS44</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_390157 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_390157">
+        <rdfs:label rdf:datatype="&xsd;string">Senecavirus A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_586425"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Seneca valley virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39724 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39724">
+        <rdfs:label rdf:datatype="&xsd;string">Circoviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_29258"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39725 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39725">
+        <rdfs:label rdf:datatype="&xsd;string">Circovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39724"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39733 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39733">
+        <rdfs:label rdf:datatype="&xsd;string">Astroviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39743 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39743">
+        <rdfs:label rdf:datatype="&xsd;string">Asfivirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_137992"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever-like viruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_39744 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_39744">
+        <rdfs:label rdf:datatype="&xsd;string">Rubulavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11158"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_398815 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_398815">
+        <rdfs:label rdf:datatype="&xsd;string">PRCV ISU-1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11146"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine respiratory coronavirus ISU-1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40119 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_40119">
+        <rdfs:label rdf:datatype="&xsd;string">Parvovirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10780"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_42005 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_42005">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine hemagglutinating encephalomyelitis virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_694003"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">HEV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Hemagglutinating encephalomyelitis virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PHEV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine hemagglutinating encephalomyelitis coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine hemagglutinating encephalomyelitis virus HEV</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_437605 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_437605">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain HB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_439217 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_439217">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain HB1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_437605"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_439218 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_439218">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 strain HB2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_437605"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_439488 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_439488">
+        <rdfs:label rdf:datatype="&xsd;string">ssRNA viruses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_443876 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_443876">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Benin 97/1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate Benin 97/1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_443877 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_443877">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus E-70</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_443878 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_443878">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus OURT 88/3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate OURT 88/3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_445791 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_445791">
+        <rdfs:label rdf:datatype="&xsd;string">Rabies virus China/MRV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11292"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_445792 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_445792">
+        <rdfs:label rdf:datatype="&xsd;string">Rabies virus China/DRV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11292"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_46221 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_46221">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_345249"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PCV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_464095 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_464095">
+        <rdfs:label rdf:datatype="&xsd;string">Picornavirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479166 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479166">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 P0404c/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479167 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479167">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 R0255/209/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479168 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479168">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 S0255/210/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479169 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479169">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 T0181c/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479170 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479170">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 U0168/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_479171 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_479171">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2 Z0161b/03</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_520973 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_520973">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/AB90/CAN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Norovirus pig/AB90/CAN</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_520974 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_520974">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/AB104/CAN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Norovirus pig/AB104/CAN</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_520975 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_520975">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/F15-10/CAN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Norovirus pig/F15-10nvl/CAN</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_53179 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_53179">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine rubulavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39744"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">LPMV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">La Piedad</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">La Piedad, Michoacan virus LPMV</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">La Piedad-Michoacan-Mexico virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">La-Piedad-Michoacan-Mexico virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:11262</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PorPV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PorPV-LPMV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine paramyxovirus La Piedad Michoacan</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_548681 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_548681">
+        <rdfs:label rdf:datatype="&xsd;string">Herpesvirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35237"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_548687 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_548687">
+        <rdfs:label rdf:datatype="&xsd;string">Macavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10374"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_555763 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_555763">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV SD0802</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus SD0802</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_555764 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_555764">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV SD0803</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus SD0803</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_561443 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_561443">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus tick/South Africa/Pretoriuskop Pr4/1996</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (isolate Tick/South Africa/Pretoriuskop Pr4/1996)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_561444 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_561444">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus warthog/Namibia/Wart80/1980</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (isolate Warthog/Namibia/Wart80/1980)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_561445 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_561445">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus pig/Kenya/KEN-50/1950</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (isolate Pig/Kenya/KEN-50/1950)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_586425 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_586425">
+        <rdfs:label rdf:datatype="&xsd;string">Senecavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12058"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">&apos;Senecavirus&apos;</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_63421 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_63421">
+        <rdfs:label rdf:datatype="&xsd;string">Swine hepatitis E virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12461"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine hepatitis E virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">SHEV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_646294 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_646294">
+        <rdfs:label rdf:datatype="&xsd;string">St-Valerien swine virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_179239"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:19396587</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_650136 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_650136">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 1 isolate F65</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85506"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine teschovirus 1 (isolate F65)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_686262 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_686262">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus E75</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_686603 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_686603">
+        <rdfs:label rdf:datatype="&xsd;string">unassigned Betaherpesvirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10357"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_686944 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_686944">
+        <rdfs:label rdf:datatype="&xsd;string">Seneca Valley virus USA/SSV-001</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_390157"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Seneca Valley virus (isolate United States/SSV-001)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_687329 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_687329">
+        <rdfs:label rdf:datatype="&xsd;string">Anelloviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_29258"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Anellovirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:227306</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_687333 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_687333">
+        <rdfs:label rdf:datatype="&xsd;string">Gammatorquevirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687329"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_687379 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_687379">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_687380 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_687380">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687333"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_68887 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_68887">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_363628"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Hepatitis TT virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">TT virus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">TTV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">unidentified ssDNA virus TA278</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_693995 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_693995">
+        <rdfs:label rdf:datatype="&xsd;string">Coronavirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11118"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_693996 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_693996">
+        <rdfs:label rdf:datatype="&xsd;string">Alphacoronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693995"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Coronavirus group 1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Group 1 species</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:156438</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:446038</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_693997 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_693997">
+        <rdfs:label rdf:datatype="&xsd;string">Alphacoronavirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693996"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Alphacoronavirus-1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_694002 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_694002">
+        <rdfs:label rdf:datatype="&xsd;string">Betacoronavirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_693995"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Coronavirus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Coronavirus group 2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Group 2 species</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:156439</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_694003 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_694003">
+        <rdfs:label rdf:datatype="&xsd;string">Betacoronavirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_694002"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_694017 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_694017">
+        <rdfs:label rdf:datatype="&xsd;string">Torovirinae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_11118"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_70062 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_70062">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine cytomegalovirus B6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35248"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_709537 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_709537">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/25A/ITA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_721753 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_721753">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/29A/ITA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_721754 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_721754">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/30A/ITA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_721755 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_721755">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/37A/ITA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_721756 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_721756">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/41A/ITA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_73487 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_73487">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine parvovirus Kresse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10796"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine parvovirus (strain KRESSE)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_759125 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_759125">
+        <rdfs:label rdf:datatype="&xsd;string">Calicivirus pig/NC-WGP93C/USA/2009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_646294"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Calicivirus pig/WGP93C/USA/2009</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_766184 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_766184">
+        <rdfs:label rdf:datatype="&xsd;string">Torque teno midi virus 1 (isolate MD1-073)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_687379"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_76803 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_76803">
+        <rdfs:label rdf:datatype="&xsd;string">Arteriviridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_76804"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_76804 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_76804">
+        <rdfs:label rdf:datatype="&xsd;string">Nidovirales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35278"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82810 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82810">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus crocodile/96/1/CR1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE CROCODILE/96/1 / CR1)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate crocodile/96/1/CR1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82811 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82811">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus crocodile/96/3/CR3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE CROCODILE/96/3 / CR3)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate crocodile/96/3/CR3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82812 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82812">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Chiredzi/83/1/CH1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE CHIREDZI/83/1 / CH1)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate CHIREDZI/83/1/CH1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82813 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82813">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus strain E-70/MS16</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_443877"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (STRAIN E-70 / ISOLATE MS16)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus strain E-70/isolate MS16</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82814 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82814">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Haiti 811</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE HAITI 811)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate Haiti 811</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82815 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82815">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Lisbon 60/lis60</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE LISBON 60 / LIS60)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate Lisbon 60/lis60</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82816 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82816">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Wildebeeslaagte/96/1/m1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE WILDEBEESLAAGTE/96/1 / M1)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus (strain M1)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus M1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate wildebeeslaagte/96/1/m1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:73470</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82817 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82817">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Pretoriuskop/96/5/pr5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AFRICAN SWINE FEVER VIRUS (ISOLATE PRETORIUSKOP/96/5 / PR5)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">African swine fever virus isolate pretoriuskop/96/5/pr5</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85506 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85506">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine teschovirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_118140"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:138686</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11161281</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine enterovirus J1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine enterovirus 1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">porcine enterovirus serotype 1</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85542 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85542">
+        <rdfs:label rdf:datatype="&xsd;string">Bovine circovirus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85543 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85543">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus type 2-C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85544 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85544">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus type 2-E</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85708 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85708">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_39725"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">PCV2</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine circovirus Type II</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine circovirus type 2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine circovirus-2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85709 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85709">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus type 2-B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine circovirus type 2b</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_857306 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_857306">
+        <rdfs:label rdf:datatype="&xsd;string">PRRSV SD 01-08</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28344"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Porcine reproductive and respiratory syndrome virus (isolate SD 01-08)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_86385 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_86385">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine circovirus type 2-D</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85708"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_874269 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_874269">
+        <rdfs:label rdf:datatype="&xsd;string">African swine fever virus Georgia 2007/1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10497"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_886262 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_886262">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine astrovirus 2 Shanghai/2008</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1239567"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_909668 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_909668">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine astrovirus PAstV-2/2007/HUN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1239567"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_91740 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_91740">
+        <rdfs:label rdf:datatype="&xsd;string">Porcine lymphotropic herpesvirus 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1960249"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;ncbitaxon.owl">
+        <rdfs:comment rdf:datatype="&xsd;string">Autogenerated by OWLTools-NCBIConverter.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

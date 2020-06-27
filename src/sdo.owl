@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;sdo.owl#"
+     xml:base="&obo;sdo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;sdo.owl">
+        <dc:creator>Shunzhou Deng</dc:creator>
+        <dc:creator>Deping Song</dc:creator>
+        <dc:creator>Yuxin Tang</dc:creator>
+        <dc:subject xml:lang="en">  </dc:subject>
+        <dc:date xml:lang="en">05-29-2019</dc:date>
+        <dc:creator xml:lang="en">Cong Wu</dc:creator>
+        <dc:creator xml:lang="en">Fuqiang Li</dc:creator>
+        <dc:creator xml:lang="en">Guyue Li</dc:creator>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:creator xml:lang="en">Puzhi Xu</dc:creator>
+        <dc:description xml:lang="en">SDO is a formal biomedical ontology in the domain of swine (i.e., pig） diseases. </dc:description>
+        <dc:title xml:lang="en">SDO: Swine Disease Ontology</dc:title>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <dc:creator xml:lang="en">Xiangxue Tian</dc:creator>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:creator xml:lang="en">Yu Ye</dc:creator>
+        <dc:creator xml:lang="en">Zhen Ding</dc:creator>
+        <owl:imports rdf:resource="&obo;sdo/MP_imports.owl"/>
+        <owl:imports rdf:resource="&obo;sdo/NCBITaxon_import.owl"/>
+        <owl:imports rdf:resource="&obo;sdo/OGMS_imports.owl"/>
+        <owl:imports rdf:resource="&obo;sdo/RO_imports.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000005 -->
+
+    <owl:ObjectProperty rdf:about="&obo;SDO_0000005">
+        <rdfs:label xml:lang="en">caused by</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a disease and a pathogen</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="&obo;SDO_0000008">
+        <rdfs:label xml:lang="en">susceptibly has phenotype</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a disease and a phenotype where the phenotype is susceptibly present in a host with the disease</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000001 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000001">
+        <rdfs:label xml:lang="en">swine disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪病</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000021"/>
+        <oboInOwl:hasDbXref>MONDO_0024990</oboInOwl:hasDbXref>
+        <obo:IAO_0000119 xml:lang="zh">Jeffrey J. Zimmerman, Locke A. Karriker, Alejandro Ramirez, Kent J. Schwartz, Gregory W. Stevenson, Jianqiang Zhang. Diseases of Swine. Wiley-Blackwell; 11 edition (June 18, 2019)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="zh">a disease process that occurs in pig (i.e., swine)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000002 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000002">
+        <rdfs:label xml:lang="en">swine infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000003 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000003">
+        <rdfs:label xml:lang="en">swine viral infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000004 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000004">
+        <rdfs:label xml:lang="en">African Swine Fever</rdfs:label>
+        <rdfs:label xml:lang="zh">非洲猪瘟</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10497"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;SDO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;SDO_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;SDO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;MP_0011514"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000006 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000006">
+        <rdfs:label xml:lang="en">Porcine Epidemic Diarrhea Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_28295"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000007 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000007">
+        <rdfs:label xml:lang="en">Porcine Reproductive and Respiratory Syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_28344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000009 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000009">
+        <rdfs:label xml:lang="en">swine viral infectious respiratory disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪病毒性消化道疾病</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000010 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000010">
+        <rdfs:label xml:lang="en">porcine adenovirus disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_114326"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000011 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000011">
+        <rdfs:label xml:lang="en">porcine circovirus disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪圆环病毒病</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_46221"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000012 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000012">
+        <rdfs:label xml:lang="en">porcine dermatitis and nephropathy syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000013 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000013">
+        <rdfs:label xml:lang="en">porcine circovirus 3 disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000014 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000014">
+        <rdfs:label xml:lang="en">porcine circovirus 2 disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_85708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000015 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000015">
+        <rdfs:label xml:lang="en">swinepox virus disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪痘</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;SDO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000016 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000016">
+        <rdfs:label xml:lang="en">inclusion body rhinitis</rdfs:label>
+        <rdfs:label xml:lang="zh">包涵体鼻炎</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_70062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000017 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000017">
+        <rdfs:label xml:lang="en">porcine deltacoronavirus disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪丁型冠状病毒</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_1586324"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000018 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000018">
+        <rdfs:label xml:lang="en">pseudorabies</rdfs:label>
+        <rdfs:label xml:lang="zh">伪狂犬</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_101947"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000019 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000019">
+        <rdfs:label xml:lang="en">porcine parvovirus disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪细小病毒病</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10796"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000020 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000020">
+        <rdfs:label xml:lang="en">swine enteric calicivirus disease</rdfs:label>
+        <rdfs:label xml:lang="zh">猪杯状病毒病</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SDO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;SDO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_339165"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000021 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000021">
+        <rdfs:label xml:lang="en">disease process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:comment>This term may be imported from ICDO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000022 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000022">
+        <rdfs:label xml:lang="en">skin cyanosis</rdfs:label>
+        <rdfs:label xml:lang="zh">皮肤发绀</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000023 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000023">
+        <rdfs:label xml:lang="en">acute high fever</rdfs:label>
+        <rdfs:label xml:lang="zh">急性高烧</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000024 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000024">
+        <rdfs:label xml:lang="en">lymph node hemorrhage</rdfs:label>
+        <rdfs:label xml:lang="zh">淋巴结出血</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDO_0000025 -->
+
+    <owl:Class rdf:about="&obo;SDO_0000025">
+        <rdfs:label xml:lang="en">high mortality</rdfs:label>
+        <rdfs:label xml:lang="zh">高死亡率</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

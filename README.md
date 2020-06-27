@@ -26,7 +26,7 @@ University of Michigan Medical School, Ann Arbor, MI, USA:
 - Dr. Yongqun Oliver He
 
 ### SDO Source Link (Open licence: CC-BY 4.0):
-OWL format: 
+OWL format: https://raw.githubusercontent.com/ontovet/SDO/master/src/sdo-merged.owl 
 
 ### Tracker link:  
 https://github.com/ontovet/SDO/issues

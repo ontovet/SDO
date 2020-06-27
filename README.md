@@ -15,10 +15,16 @@ Jiangxi Agricultural University:
 - Dr. Cong Wu
 - Puzhi Xu
 
-Tianjin 
+Tianjin Animal Husbandry and Veterinary Research Institute, Tianjin, China
 - Fuqiang Li 
 - Xiangxue Tian
 
 University of Michigan Medical School, Ann Arbor, MI, USA: 
 - Dr. Yongqun Oliver He
 
+
+### Tracker link:  
+https://github.com/ontovet/SDO/issues
+
+### News: 
+- 6/27/2020: The SDO ontology repository was created. 

@@ -25,6 +25,8 @@ Tianjin Animal Husbandry and Veterinary Research Institute, Tianjin, China
 University of Michigan Medical School, Ann Arbor, MI, USA: 
 - Dr. Yongqun Oliver He
 
+### SDO Source Link (Open licence: CC-BY 4.0):
+OWL format: 
 
 ### Tracker link:  
 https://github.com/ontovet/SDO/issues
@@ -34,3 +36,4 @@ Guyue Li, Zhen Ding, Yu Ye, Deping Song, Fuqiang Li, Puzhi Xu, Cong Wu, Ping Liu
 
 ### News: 
 - 6/27/2020: The SDO ontology repository was created. 
+- 10/28/2019: Dr. Guyue Li presented an oral presentation and a poster on the SDO development and applications at the second annual Chinese Conference on Biomedical Ontology and Terminology (CCBOT-2019) in Beijing, China. (note: see the citation detail above). 

@@ -14,10 +14,13 @@ Jiangxi Agricultural University:
 - Dr. Yu Ye
 - Dr. Cong Wu
 - Puzhi Xu
+- Shunzhou Deng
+- Guoliang Hu
 
 Tianjin Animal Husbandry and Veterinary Research Institute, Tianjin, China
 - Fuqiang Li 
 - Xiangxue Tian
+- Minghua Yan
 
 University of Michigan Medical School, Ann Arbor, MI, USA: 
 - Dr. Yongqun Oliver He

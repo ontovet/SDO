@@ -7,7 +7,7 @@ SDO is developed as a community effort.
 ### SDO Developers:
 The SDO development is an international collaboration. The developers includes:
 
-Jiangxi Agricultural University: 
+Jiangxi Agricultural University, Nanchang, Jiangxi, China: 
 - Dr. Guyue Li
 - Dr. Zeng Ding
 - Dr. Deping Song

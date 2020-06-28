@@ -9,7 +9,7 @@ The SDO development is an international collaboration. The developers includes:
 
 Jiangxi Agricultural University, Nanchang, Jiangxi, China: 
 - Dr. Guyue Li
-- Dr. Zeng Ding
+- Dr. Zhen Ding
 - Dr. Deping Song
 - Dr. Yu Ye
 - Dr. Cong Wu

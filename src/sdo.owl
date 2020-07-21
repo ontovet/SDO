@@ -228,6 +228,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDO_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="zh">PRRS</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Porcine Reproductive and Respiratory Syndrome</rdfs:label>
         <rdfs:label xml:lang="zh">猪蓝耳病</rdfs:label>
     </owl:Class>
@@ -509,7 +510,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDO_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">high viral PRRS</rdfs:label>
+        <rdfs:label xml:lang="en">highly pathogenic PRRS</rdfs:label>
         <rdfs:label xml:lang="zh">高致病性猪蓝耳病</rdfs:label>
     </owl:Class>
     
@@ -541,7 +542,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MP_0000533"/>
-        <rdfs:label xml:lang="en">Renal cortex hemorrhage</rdfs:label>
+        <rdfs:label xml:lang="en">renal cortex hemorrhage</rdfs:label>
         <rdfs:label xml:lang="zh">肾脏皮质出血</rdfs:label>
     </owl:Class>
     

@@ -27,12 +27,12 @@
         <dc:creator xml:lang="en">Yu Ye</dc:creator>
         <dc:creator>Yuxin Tang</dc:creator>
         <dc:creator xml:lang="en">Zhen Ding</dc:creator>
-        <dc:date xml:lang="en">05-29-2019</dc:date>
+        <dc:date xml:lang="en">07-21-2020</dc:date>
         <dc:description xml:lang="en">SDO is a formal biomedical ontology in the domain of swine (i.e., pig） diseases. </dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">  </dc:subject>
         <dc:title xml:lang="en">SDO: Swine Disease Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.16</owl:versionInfo>
     </owl:Ontology>
     
 

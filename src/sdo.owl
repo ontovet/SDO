@@ -27,12 +27,12 @@
         <dc:creator xml:lang="en">Yu Ye</dc:creator>
         <dc:creator>Yuxin Tang</dc:creator>
         <dc:creator xml:lang="en">Zhen Ding</dc:creator>
-        <dc:date xml:lang="en">07-21-2020</dc:date>
+        <dc:date xml:lang="en">07-29-2020</dc:date>
         <dc:description xml:lang="en">SDO is a formal biomedical ontology in the domain of swine (i.e., pig） diseases. </dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">  </dc:subject>
         <dc:title xml:lang="en">SDO: Swine Disease Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.16</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -75,7 +75,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDO_0000005">
         <obo:IAO_0000115>An object property that represents a relation between a disease and a pathogen</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">caused by</rdfs:label>
+        <rdfs:label xml:lang="en">caused by infection with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -185,6 +185,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118>ASF</obo:IAO_0000118>
         <rdfs:label xml:lang="en">African Swine Fever</rdfs:label>
         <rdfs:label xml:lang="zh">非洲猪瘟</rdfs:label>
     </owl:Class>
@@ -270,6 +271,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_46221"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118>PCVAD</obo:IAO_0000118>
+        <obo:IAO_0000118>PDNS</obo:IAO_0000118>
+        <obo:IAO_0000118>PMWS</obo:IAO_0000118>
+        <obo:IAO_0000118>Porcine Dermatitis and Nephropathy Syndrome</obo:IAO_0000118>
+        <obo:IAO_0000118>post weaning multisystemic wasting syndrome</obo:IAO_0000118>
         <rdfs:label xml:lang="en">porcine circovirus disease</rdfs:label>
         <rdfs:label xml:lang="zh">猪圆环病毒病</rdfs:label>
     </owl:Class>
@@ -289,6 +295,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDO_0000011"/>
+        <obo:IAO_0000118>PCV3</obo:IAO_0000118>
         <rdfs:label xml:lang="en">porcine circovirus 3 disease</rdfs:label>
     </owl:Class>
     
@@ -304,6 +311,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_85708"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118>PCV2</obo:IAO_0000118>
         <rdfs:label xml:lang="en">porcine circovirus 2 disease</rdfs:label>
     </owl:Class>
     

@@ -4,11 +4,11 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sdo/RO_imports.owl" uri="imports/RO_imports.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sdo/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="duplicate:http://purl.obolibrary.org/obo/sdo.owl" uri="sdo-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="duplicate:http://purl.obolibrary.org/obo/sdo.owl" uri="sdo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="http://purl.obolibrary.org/obo/sdo/MP_imports.owl" uri="imports/MP_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="http://purl.obolibrary.org/obo/sdo/NCBITaxon_import.owl" uri="imports/NCBITaxon_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="http://purl.obolibrary.org/obo/sdo/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593266574048" name="http://purl.obolibrary.org/obo/sdo/RO_imports.owl" uri="imports/RO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="duplicate:http://purl.obolibrary.org/obo/sdo.owl" uri="sdo-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="duplicate:http://purl.obolibrary.org/obo/sdo.owl" uri="sdo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="http://purl.obolibrary.org/obo/sdo/MP_imports.owl" uri="imports/MP_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="http://purl.obolibrary.org/obo/sdo/NCBITaxon_import.owl" uri="imports/NCBITaxon_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="http://purl.obolibrary.org/obo/sdo/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596067553172" name="http://purl.obolibrary.org/obo/sdo/RO_imports.owl" uri="imports/RO_imports.owl"/>
     </group>
 </catalog>
